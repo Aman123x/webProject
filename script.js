@@ -1,3 +1,29 @@
+document.addEventListener('DOMContentLoaded', function() {
+    const menuIcon = document.getElementById('menu');
+    const closeIcon = document.getElementById('close');
+    const menuPanel = document.querySelector('.menu_panel');
+
+    // Function to show the menu panel and hide the menu icon
+    function showMenuPanel() {
+      menuPanel.classList.add('active');
+      menuIcon.style.display = 'none';
+      closeIcon.style.display = 'block';
+    }
+
+    // Function to hide the menu panel and show the menu icon
+    function hideMenuPanel() {
+      menuPanel.classList.remove('active');
+      menuIcon.style.display = 'block';
+      closeIcon.style.display = 'none';
+    }
+
+    // Add event listeners
+    menuIcon.addEventListener('click', showMenuPanel);
+    closeIcon.addEventListener('click', hideMenuPanel);
+  });
+
+
+
 document.addEventListener('DOMContentLoaded', () => {
     const carousel = document.querySelector('.carousel');
     const scrollStep = window.innerWidth;
@@ -24,3 +50,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setInterval(scrollCarousel, scrollInterval);
 });
+
+
