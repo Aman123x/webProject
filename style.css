@@ -272,7 +272,7 @@
 
 .profit_child h1 {
   text-align: center;
-  padding-block: 1rem 1rem;
+  padding-block: 1rem;
   margin-top: 1rem;
   font-size: 2rem;
   background-color: green;
@@ -558,9 +558,35 @@ p {
   }
 
 
+
+
+
   .apply{
     padding-top: 2rem;
-    padding-inline: 3rem;
+    padding-inline: 1rem 0.7rem;
+  }
+
+  .click{
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .click button{
+    margin-left: 5rem;
+  }
+
+  .entire p{
+    /* text-align: left; */
+    font-size: 1.6rem;
+    padding-block: 2rem;
+  }
+
+  .profit{
+    padding-inline: 2rem 0.7rem;
+  }
+
+  .profit_child h1{
+    padding-inline: 1rem;
   }
 
   .conditions{
@@ -569,7 +595,12 @@ p {
   }
 
   .head_child{
-    padding-inline: 3rem;
+    padding-inline: 2rem;
+  }
+
+  .conditions_child1{
+    padding-inline:1.5rem 0.7rem;
+    width: 100%;
   }
 
   .conditions_child2{
@@ -581,12 +612,21 @@ p {
     justify-content: flex-start;
     gap: 3rem;
     padding-bottom: 2rem;
+    padding-left: 0.7rem;
+  }
+
+  .footer_left th,td{
+    padding: 0.3rem 1rem;
   }
 
   .footer_bottom{
     flex-wrap: wrap;
     flex-direction: column-reverse;
     gap: 2rem;
+  }
+
+  .reser p{
+    text-align: center;
   }
 
 
